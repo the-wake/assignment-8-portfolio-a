@@ -1,0 +1,417 @@
+body {
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    width: 99.8%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: bolder;
+    background: rgb(176,176,176);
+    background: linear-gradient(90deg, rgba(176,176,176,1) 0%, rgba(179,179,179,1) 39%, rgba(231,231,231,1) 100%);
+    padding: 30px;
+    border-top-right-radius: 10px;
+}
+
+h2 {
+    color: black;
+    font-size: 32px;
+    padding: 16px;
+    font-weight: bolder;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 16px;
+    font-weight: bolder;
+}
+
+h4 {
+    display: inline;
+    position: relative;
+    left: 40px;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    /* padding: 5px; */
+}
+
+h5 {
+    color: black;
+    font-size: 22px;
+    padding: 12px 16px 6px 28px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px 15px;
+}
+
+a h2 {
+    color: #0000FF;
+}
+
+/* Unless I add the h2 here, only the underline is colored regardless of whether I put this before or after the h2 style. */
+/* I've been told styling a directly is fiddly. */
+
+.magic {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 1 1 100px;
+}
+
+nav {
+    flex: 1 1 20px;
+    background: rgb(108,216,216);
+    background: linear-gradient(90deg, rgba(108,216,216,1) 0%, rgba(95,240,240,1) 100%);
+    padding: 20px;
+    margin: 2px 0px 0px 0px;
+    border-bottom-right-radius: 10px;
+}
+
+/* .hat {
+    position: relative;
+    top: -170px;
+    width: 280px;
+} */
+
+/* Trying to find a way to get this over the top banners more naturally, but it mssed up the formatting of the rest of the page. */
+
+.hat {
+    float: right;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.hat img {
+    width: 280px;
+    background: rgb(231,231,231);
+    background: radial-gradient(circle, rgba(231,231,231,1) 0%, rgba(179,179,179,1) 39%, rgba(143,163,167,1) 100%);
+}
+
+.laughing {
+    display: none;
+    color: whitesmoke;
+    width: 280px;
+}
+
+.navbar {
+    display: inline;
+    float: right;
+}
+
+nav a {
+    color: grey;
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 12px;
+}
+
+.hax1, .hax2 {
+    display: none;
+}
+
+.banner {
+    background-color: black;
+    /* padding: 5px 2px 1px 0; */
+}
+
+.banner img {
+    width: 10%;
+}
+
+/* There's always an extra ~4 black pixels of padding at the bottom of these and I can't figure out why. For now I just removed 3 pixels from the bottom border. */
+
+.wrapper {
+    background: rgb(130,203,203);
+    background: linear-gradient(34deg, rgba(130,203,203,1) 0%, rgba(132,220,220,1) 45%, rgba(136,255,255,1) 100%);
+    /* display: flex; */
+    /* margin: 10px 0px; */
+    padding: 1px 8px 8px 8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 99.2%;
+    height: auto;
+    overflow: auto;
+}
+
+/* I had this as flex at first, but had a hard time setting up everything to display properly. Not sure if it's better this way or what I'd gain by making it flex. */
+
+/* As the display narrows, the header area and body area get slightly out of sync size-wise. */
+
+main {
+    display: inline-block;
+    width: 65%;
+}
+
+/* The main was throwing up a weird thing when set to display: inline; where the inspector shows the margin as basically being the aside. It stopped doing thins when I changed it to display: inline-block; and I have no idea why. */
+
+main section {
+    /* display: block; */
+    background-color: whitesmoke;
+    height: fit-content;
+    min-height: 200px;
+    /* border: black;
+    border-width: 2px;
+    border-style: solid; */
+    margin: 15px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main section h2, aside h2 {
+    border-radius: 7px;    
+}
+
+main img {
+    float: left;
+    width: 250px;
+    padding: 25px 20px 8px 20px;
+}
+
+.about {
+    background: rgb(130,203,203);
+    background: linear-gradient(34deg, rgba(130,203,203,1) 0%, rgba(132,220,220,1) 45%, rgba(136,255,255,1) 100%);
+    margin: 8px 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+/* It feels like this is only necessary because I missed something else. */
+
+aside {
+    float: right;
+    width: 32%;
+}
+
+.right {
+    background-color: whitesmoke;
+    height: 100%;
+    /* border: black;
+    border-width: 2px;
+    border-style: solid; */
+    margin: 15px 10px;
+    border-radius: 10px;
+}
+
+.why {
+    padding-bottom: 10px;
+}
+
+.contact {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.cform {
+    display: block;
+    padding: 0 10px 10px 10px;
+    line-height: 25px;
+}
+
+#fname, #lname {
+    width: 125px;
+}
+
+#email, #ssn {
+    display: block;
+    margin-top: 4px;
+    width: 262px;
+    max-width: inherit;
+}
+
+/* Below is contact form CSS for if displaying as a block element above the footer */
+/* .contact {
+    display: block;
+    background-color: whitesmoke;
+    color: rgb(82, 82, 82);
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact label {
+    display: block;
+}
+
+#fname {
+    width: 150px;
+}
+
+#lname {
+    width: 150px;
+}
+
+#email {
+    width: 450px;
+}
+
+#submit {
+    width: 80px;
+}
+
+form {
+    height: 40px;
+} */
+
+.at {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.contact p {
+    padding: 0 4px 4px 4px;
+}
+
+.service {
+    margin: 0 0 20px 0;
+}
+
+.lol {
+    color: white;
+}
+
+footer {
+    background-color: rgb(245, 82, 136);
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Is there an easy way to adjust the height with height: Npx; and keep the text and other elements centered? */
+
+footer img {
+    width: 24px;
+}
+
+footer div {
+    line-height: 40px;
+}
+
+.ABR {
+    display: none;
+}
+
+.hat:hover .teh-hat {
+    display: none;
+}
+
+.hat:hover .laughing {
+    display: block;
+}
+
+.magic:hover .hax1 {
+    display: inline;
+    color:rgb(108, 216, 216);
+    background-color:rgb(82, 160, 160);
+}
+
+.hax:active .hax2 {
+    display: inline;
+    color: grey;
+    background-color:rgb(82, 160, 160);
+}
+
+main section:hover .noticeMe {
+    width: 275px;
+    padding: 17px;
+}
+
+/* Need to figure out if there's a way to have this increase dynamically, or if I need to hard-code it to a certain size. */
+
+.footer:hover .ABR {
+    display: inherit;
+}
+
+@media screen and (max-width: 992px) {
+    nav p {
+        display: none;
+    }
+    main img, aside img, .hat, .at {
+        display: none;
+    }
+    .fluff {
+        display: none;
+    }
+    .a7 {
+        display: none;
+    }
+    .a8 {
+        display: none;
+    }
+    .a9 {
+        display: none;
+    }
+    .a10 {
+        display: none;
+    }
+    .banner img {
+        width: 16.667%;
+    }
+    #email, #ssn {
+        width: auto;
+    }
+    /* h1 {
+        border-bottom-right-radius: 10px;
+    }
+    nav {
+        position: fixed;
+        border-top-right-radius: 10px;
+    }
+    .magic {
+        display: block
+    } */
+}
+
+/* The above are used to fix the nav bar, which is cool but leads to some weird behavior. It's there as something I can mess around with. I know you can make it anchor more naturally but don't know how yet. */
+
+@media screen and (max-width: 786px) {
+    .wrapper {
+        display: block;
+        padding: 1px;
+    }
+    .magic {
+        padding: 2px;
+    }
+    main {
+        width: auto;
+        /* order: 1; */
+    }
+    aside {
+        width: auto;
+    }
+    .right {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;}
+    .contact {
+        margin: 10px ;
+    }
+    #email, #ssn {
+        width: 262px;
+    }
+}
