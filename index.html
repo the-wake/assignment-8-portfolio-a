@@ -6,104 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Grey Hat</title>
+    <title>Ben Martin Web Design</title>
 </head>
 
-<!-- Since I don't have things to populate an actual portfolio, this is a for-fun mockup that I can fill in as I get the relevant content together. -->
-
 <body>
-    <div class="hat">
-        <img src="./assets/images/hat.png" alt="teh hat" class="teh-hat">
-        <p class="laughing">"I thought what I'd do was, I'd pretend I was one of those deaf-mutes."</p>
-    </div>
     <section class="magic">
         <header>
-            <h1>Grey Hat Studios</h1>
+            <h1>Web Designs by Ben Martin</h1>
         </header>
         <nav>
-            <h4 class="fluff">Deliciously Affordable. Suspiciously Professional. <span class="hax"><span class="hax1">Nominally Legal. <span class="hax2">You don't want to know.</span></span></h4>
+            <h4 class="fluff">Bad at marketing myself. Good at making websites.</h4>
             <div class="navbar">
-                <a href="#fixer" alt="Professional Fixer">Professional Fixer</a>
-                <a href="#assets" alt="Asset Recovery">Asset Recovery</a>
-                <a href="#data" alt="Data Services">Data Services</a>
-                <a href="#neon" alt="Neon">Neon</a>
-            </div>  
+                <a href="#portfolio" alt="Portfolio">Portfolio</a>
+                <a href="https://github.com/the-wake" target="blank" alt="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/ben-martin-26266443/" target="blank" alt="LinkedIn">LinkedIn</a>
+                <a href="#" target="blank" alt="Resume">Resume</a>
+            </div>
         </nav>
     </section>
 
     <section class="about">
-        <h2>About Grey Hat Studios</h2>
-        <section class="banner">
-            <img src="assets/images/at.png" class="a1"><img src="assets/images/at.png" class="a2"><img src="assets/images/at.png" class="a3"><img src="assets/images/at.png" class="a4"><img src="assets/images/at.png" class="a5"><img src="assets/images/at.png" class="a6"><img src="assets/images/at.png" class="a7"><img src="assets/images/at.png" class="a8"><img src="assets/images/at.png" class="a9"><img src="assets/images/at.png" class="a10">
-        </section>
-        <p>Grey Hat is dedicated to letting you live your best life, whatever that means for the people around you.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
-        <p>All work and no play makes Jack a dull boy.</p>
+        <div id="profile-container">
+            <img src="assets/images/at.png" alt="In case you're wondering, this is a graphic of my own design. I didn't just screenshot an image with a transparency layer image. (It's an artistic statement. [Please don't dock me points!])" id="profile-pic">
+        </div>
+        <p class="about-me">Hello! I'm Ben Martin, an independent front-end web designer based in Minneapolis, Minnesota. I specialize in creating highly usable, visually pleasing style (CSS) and practical, flexible, dynamic design (JavaScript).
+        <br />
+        <br />
+        In addition to web design and programming, I design board games. I have two published games and more in the works! In my free time, I enjoy playing Smash Bros. Ultimate (dirty Samus main) and Dungeons & Dragons 5th edition.
+        <br />
+        <br />
+        For more information, check out my LinkedIn profile, or take a look at my GitHub page.</p>
     </section>
-    <!-- This part is just here because I wanted to visualize the architecture if there's more vertical content. I don't think it makes sense to change the navigation architecture to jump between here and the top, but it's something to keep in mind. -->
 
     <div class="wrapper">
-    <!-- the wrapper div class is responsible in part for setting the style of the overall section. Other things are split between the header tags, main section, and main aside -->
 
-        <main>
-            <section id="fixer">
-                <a href="#"><img src="./assets/images/fixer.png" alt="Fixer" class="noticeMe"></a>
-                <a href="#"><h2>Professional Fixer</h2></a>
-                <p>Whether you're looking for the right job, or looking for the right professionals to carry out your next major op, Grey Hat has you covered!</p>
-                <p>Our extensive network of tested, vetted, and frighteningly professional individuals is sure to delight and astound! Don't believe us? When was the last time you heard of us or our operations? Yeah, that's what we thought.</p>
+        <main id="portfolio">
+            <section id="monster-finder">
+                <a href="https://the-wake.github.io/project-1-dnd/"><img src="./assets/images/dragon.jpg" alt="D&D Monster Finder" class="project-img"></a>
+                <a href="https://the-wake.github.io/project-1-dnd/"><h2>D&D Monster Finder</h2></a>
+                <p>Every DM (Dungeon Master) knows that you can't build an encounter without monsters! Every DM also knows that as a system ages, tracking down monsters becomes a huge hassle.</p>
+                <p>The D&D Monster Finder uses the open5e API to seach monsters from a huge range of official and unofficial sources. Users can select their desired Challenge Rating, browse mosters color-coded by type, and save lists of monsters they intend to use.</p>
             </section>
-            <section id="assets">
-                <a href="#"><img src="./assets/images/assets.png" alt="Assets" class="noticeMe"></a>
-                <a href="#"><h2>Asset Recovery</h2></a>
-                <p>Does someone have something, and you think they shouldn't have it? Or that you deserve it more than they do? Well who are we to argue?</p>
-                <p>With Grey Hat, you're just one simple transaction away from just having the stuff you want to have. Because property is kind of a bullshit concept, don't you think?</p>
+            <section id="weather-dashboard">
+                <a href="https://the-wake.github.io/assignment-6-weather/"><img src="./assets/images/weather.jpg" alt="I'm sorry for the background it's really hard to find weather icons that you don't have to pay for!" class="project-img"></a>
+                <a href="https://the-wake.github.io/assignment-6-weather/"><h2>Weather Dashboard</h2></a>
+                <p>Have you ever wondered what the weather is like outside? Have you ever wondered what the weather is like somewhere else? Have you ever wanted to know what the weather will be like five days from now?</p>
+                <p>If you answered "yes" to any of these questions, congratulations! This application can answer them for you! Drawing from the OpenWeather API, it will return the current conditions and 5-day forecast for any city you enter.</p>
             </section>
-            <section id="data">
-                <a href="#"><img src="./assets/images/data.png" alt="Data" class="noticeMe"></a>
-                <a href="#"><h2>Data Services</h2></a>
-                <p>What even is data anyway? Just a bunch of made up 0s and 1s. Why should those little bits stand between you and the world you want to live in?</p>
-                <p>Never fear! We recognize that reality is really just a collection of data, and that all data is fundamentally mutable. Become the master of your own reality with our best-in-class data services.</p>
-            </section>
-            <section id="neon">
-                <a href="#"><img src="./assets/images/neon.png" alt="Neon" class="noticeMe"></a>
-                <a href="#"><h2>Neon</h2></a>
-                <p>Because no cyberpunk hellscape is complete without near-fatal levels of neon on every god damn thing.</p>
+            <section id="code-quiz">
+                <a href="https://the-wake.github.io/assignment-4-quiz/"><img src="./assets/images/coding.jpg" alt="Coding Quiz" class="project-img"></a>
+                <a href="https://the-wake.github.io/assignment-4-quiz/"><h2>Coding Quiz</h2></a>
+                <p>What is the DOM? How does JavaScript differ from regular-old Java? This quiz won't answer these questions for you, but it will tell you if you're wrong, which is almost as good!</p>
+                <p>The superhackers among you may even be able to unlock a super-secret quiz about the greatest subgenre of all time!</p> 
             </section>
         </main>
 
         <aside>
-            <section class="why right">
-                <h3>Why Grey Hat?</h3>
-                <h5>Anonymity</h5>
-                <p>Here at Grey Hat, privacy is our top priority. Because obviously the relationship between an independent contractor and their anonymous, untracable middleman is one of the utmost sanctity. <span class="lol">lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol lol</span></p>
-                <h5>Discrestion</h5>
-                <p>Which scretion? Dis one. No matter how big the job, Grey Hat will absolutely ensure that nothing you do will ever be traced back to Grey Hat.</p>
-                <h5>Peace of Mind</h5>
-                <p>Do you know what's better than keeping your hands clean? Having other people do your sketchier work for you! With Grey Hat, you'll sleep knowing that at the end of the day, someone else is somehow responsible for your most deplorable actions.</p>
-                <h5>Professionalism</h5>
-                <p>Because obviously the the best choice for your most delicate needs is a shadow corporation whose webpage looks like it was made by a middle schooler in the mid-'90s.</p>
+            <section class="services right">
+                <h3>Services</h3>
+                <h5>Web Design</h5>
+                <p>Whether you need a site designed from scratch, or help debugging a code, or anything bbetween, I'll have you covered!</p>
+                <h5>Scripting and API</h5>
+                <p>With a solid foundation in JavaScript and various API methods, your site can be as dynamic and responsive as you'd like! (As long as it can be done in jQuery.)</p>
+                <h5>Website Architecture and Whiteboarding</h5>
+                <p>Just want to hash out a site's architecture or style document? I love doing that. Let's get to it!</p>
+                <h5>Writing & Proofreading</h5>
+                <p>Just because I'm a programmer doesn't mean I've skipped the basics! With two decads of experience in writing and editing, I'll make sure you copy is squeaky clean and sharp as heck.</p>
             </section>
             <section class="contact right">
-                <h3>Contact Us</h3>
-                <form class="cform">
-                    <p>Ready to take the plunge? Reach us at <a href="mailto:support@aircanada.com?subject=No don't email them that was a joke&body=No for real, don't bug them they have enough they're dealing with right now.">support@aircanada.com</a>, or fill in the information below.</p>
-                    <input type="text" id="fname" placeholder="First Name"></label>
-                    <input type="text" id="lname" placeholder="Last Name"></label>
-                    <input type="text" id="email" placeholder="Email Address"></label>
-                    <input type="text" id="ssn" placeholder="Social Security Number :)"></label>
-                    <button id="submit">Submit</button>
-                </form>
+                <h3>Contact</h3>
+                <p>If you'd like to get in touch, you can contact me at <a href="mailto:bmartin2009@gmail.com">bmartin2009@gmail.com</a>.</p>
             </section>
         </aside>
     </div>
@@ -121,8 +93,7 @@
     
     <footer>
         <div class="footer">
-            Made with CSS, ❤️, <img src="./assets/images/weeb.png" alt="flag">, and neon.
-            <div class="ABR">Always Be Running!</div>
+            Made with CSS, BCS, & ❤️.
         </div>
     </footer>
 

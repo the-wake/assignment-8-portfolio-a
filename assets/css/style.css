@@ -58,14 +58,6 @@ a h2 {
     color: #0000FF;
 }
 
-/* Unless I add the h2 here, only the underline is colored regardless of whether I put this before or after the h2 style. */
-/* I've been told styling a directly is fiddly. */
-
-.magic {
-    display: flex;
-    flex-direction: column;
-}
-
 header {
     flex: 1 1 100px;
 }
@@ -77,35 +69,6 @@ nav {
     padding: 20px;
     margin: 2px 0px 0px 0px;
     border-bottom-right-radius: 10px;
-}
-
-/* .hat {
-    position: relative;
-    top: -170px;
-    width: 280px;
-} */
-
-/* Trying to find a way to get this over the top banners more naturally, but it mssed up the formatting of the rest of the page. */
-
-.hat {
-    float: right;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    width: 280px;
-    border-radius: 10px;
-}
-
-.hat img {
-    width: 280px;
-    background: rgb(231,231,231);
-    background: radial-gradient(circle, rgba(231,231,231,1) 0%, rgba(179,179,179,1) 39%, rgba(143,163,167,1) 100%);
-}
-
-.laughing {
-    display: none;
-    color: whitesmoke;
-    width: 280px;
 }
 
 .navbar {
@@ -120,26 +83,9 @@ nav a {
     padding: 12px;
 }
 
-.hax1, .hax2 {
-    display: none;
-}
-
-.banner {
-    background-color: black;
-    /* padding: 5px 2px 1px 0; */
-}
-
-.banner img {
-    width: 10%;
-}
-
-/* There's always an extra ~4 black pixels of padding at the bottom of these and I can't figure out why. For now I just removed 3 pixels from the bottom border. */
-
 .wrapper {
     background: rgb(130,203,203);
     background: linear-gradient(34deg, rgba(130,203,203,1) 0%, rgba(132,220,220,1) 45%, rgba(136,255,255,1) 100%);
-    /* display: flex; */
-    /* margin: 10px 0px; */
     padding: 1px 8px 8px 8px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -148,25 +94,45 @@ nav a {
     overflow: auto;
 }
 
-/* I had this as flex at first, but had a hard time setting up everything to display properly. Not sure if it's better this way or what I'd gain by making it flex. */
+.about {
+    display: flex;
+    background: rgb(130,203,203);
+    background: linear-gradient(34deg, rgba(130,203,203,1) 0%, rgba(132,220,220,1) 45%, rgba(136,255,255,1) 100%);
+    margin: 8px 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
 
-/* As the display narrows, the header area and body area get slightly out of sync size-wise. */
+#profile-container {
+    float: left;
+    max-width: 300px;
+    flex: 100px;
+    margin: 20px;
+}
+
+#profile-pic {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.about-me {
+    flex: 3;
+    margin: 20px;
+    font-size: 20px;
+    text-align: left;
+}
 
 main {
     display: inline-block;
     width: 65%;
 }
 
-/* The main was throwing up a weird thing when set to display: inline; where the inspector shows the margin as basically being the aside. It stopped doing thins when I changed it to display: inline-block; and I have no idea why. */
-
 main section {
-    /* display: block; */
     background-color: whitesmoke;
     height: fit-content;
     min-height: 200px;
-    /* border: black;
-    border-width: 2px;
-    border-style: solid; */
     margin: 15px 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -176,26 +142,11 @@ main section h2, aside h2 {
     border-radius: 7px;    
 }
 
-main img {
+.project-img {
     float: left;
     width: 250px;
     padding: 25px 20px 8px 20px;
 }
-
-.about {
-    background: rgb(130,203,203);
-    background: linear-gradient(34deg, rgba(130,203,203,1) 0%, rgba(132,220,220,1) 45%, rgba(136,255,255,1) 100%);
-    margin: 8px 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    text-align: center;
-}
-
-.about p {
-    font-size: 20px;
-}
-
-/* It feels like this is only necessary because I missed something else. */
 
 aside {
     float: right;
@@ -205,26 +156,22 @@ aside {
 .right {
     background-color: whitesmoke;
     height: 100%;
-    /* border: black;
-    border-width: 2px;
-    border-style: solid; */
     margin: 15px 10px;
     border-radius: 10px;
 }
 
-.why {
+.services {
     padding-bottom: 10px;
 }
 
 .contact {
     margin: 0 auto;
     max-width: 400px;
+    padding-bottom: 8px;
 }
 
-.cform {
-    display: block;
-    padding: 0 10px 10px 10px;
-    line-height: 25px;
+.contact p {
+    margin: 0 14px 0 14px;
 }
 
 #fname, #lname {
@@ -237,39 +184,6 @@ aside {
     width: 262px;
     max-width: inherit;
 }
-
-/* Below is contact form CSS for if displaying as a block element above the footer */
-/* .contact {
-    display: block;
-    background-color: whitesmoke;
-    color: rgb(82, 82, 82);
-    margin: 10px;
-    padding: 10px;
-}
-
-.contact label {
-    display: block;
-}
-
-#fname {
-    width: 150px;
-}
-
-#lname {
-    width: 150px;
-}
-
-#email {
-    width: 450px;
-}
-
-#submit {
-    width: 80px;
-}
-
-form {
-    height: 40px;
-} */
 
 .at {
     display: block;
@@ -286,10 +200,6 @@ form {
 
 .service {
     margin: 0 0 20px 0;
-}
-
-.lol {
-    color: white;
 }
 
 footer {
@@ -337,58 +247,10 @@ footer div {
     background-color:rgb(82, 160, 160);
 }
 
-main section:hover .noticeMe {
+main section:hover .project-img {
     width: 275px;
     padding: 17px;
 }
-
-/* Need to figure out if there's a way to have this increase dynamically, or if I need to hard-code it to a certain size. */
-
-.footer:hover .ABR {
-    display: inherit;
-}
-
-@media screen and (max-width: 992px) {
-    nav p {
-        display: none;
-    }
-    main img, aside img, .hat, .at {
-        display: none;
-    }
-    .fluff {
-        display: none;
-    }
-    .a7 {
-        display: none;
-    }
-    .a8 {
-        display: none;
-    }
-    .a9 {
-        display: none;
-    }
-    .a10 {
-        display: none;
-    }
-    .banner img {
-        width: 16.667%;
-    }
-    #email, #ssn {
-        width: auto;
-    }
-    /* h1 {
-        border-bottom-right-radius: 10px;
-    }
-    nav {
-        position: fixed;
-        border-top-right-radius: 10px;
-    }
-    .magic {
-        display: block
-    } */
-}
-
-/* The above are used to fix the nav bar, which is cool but leads to some weird behavior. It's there as something I can mess around with. I know you can make it anchor more naturally but don't know how yet. */
 
 @media screen and (max-width: 786px) {
     .wrapper {
