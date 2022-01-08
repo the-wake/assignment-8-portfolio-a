@@ -131,7 +131,7 @@ main {
 main section {
     background-color: whitesmoke;
     height: fit-content;
-    min-height: 200px;
+    min-height: 225px;
     margin: 15px 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -139,6 +139,12 @@ main section {
 
 main section h2, aside h2 {
     border-radius: 7px;    
+}
+
+.repo-link {
+    position: relative;
+    right: 15px;
+    float: right;
 }
 
 .project-img {
